@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Rectangle Calculator</string>
+    <string name="button_clear">Clear</string>
+    <string name="button_calculate">Calculate</string>
+</resources>

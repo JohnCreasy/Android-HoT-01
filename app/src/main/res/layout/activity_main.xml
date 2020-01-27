@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="172dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/button_calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextArea" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rectangle Calculator"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="172dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/button_clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCalculate" />
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="205dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="36dp"
+        android:editable="true"
+        android:text="Please enter a height: "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <EditText
+        android:id="@+id/editTextWidth"
+        android:layout_width="205dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="35dp"
+        android:editable="true"
+        android:text="Please enter a width: "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHeight" />
+
+    <EditText
+        android:id="@+id/editTextPerimeter"
+        android:layout_width="209dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="34dp"
+        android:text="@"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWidth" />
+
+    <EditText
+        android:id="@+id/editTextArea"
+        android:layout_width="209"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text="Display Area"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPerimeter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
